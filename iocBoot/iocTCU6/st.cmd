@@ -19,3 +19,5 @@ dbLoadRecords("db/TCU6.db","P=RA-TL:RF-Circulator-BO:,R=,PORT=L0,A=0")
 
 cd "${TOP}/iocBoot/${IOC}"
 iocInit
+
+#var streamDebug 1

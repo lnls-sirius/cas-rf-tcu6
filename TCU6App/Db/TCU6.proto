@@ -2,7 +2,10 @@ InTerminator=CR LF;
 
 getData {
     out "M", CR;
-    in "M  Tin=%/\s*?/%(\$1\$2Tin-Mon)f; Tout=%/\s*?/%(\$1\$2Tout-Mon)f; Tamb=%/\s*?/%(\$1\$2Tamb-Mon)f; dT=%/\s*?/%f(\$1\$2dT-Mon); Current=%/\s*?/%(\$1\$2Current-Mon)f; RF=%/\s*?/%(\$1\$2ReflectedPwr-Mon)f;";
-
-#    in  "M  Tin=  %(\$1\$2Tin-Mon)f; Tout=  %(\$1\$2Tout-Mon)f; Tamb=  %(\$1\$2Tamb-Mon)f; dT=  %f(\$1\$2dT-Mon); Current=   %(\$1\$2Current-Mon)f; RF= %(\$1\$2ReflectedPwr-Mon)f;";
+    in "%/M\s\sTin=\s+/%(\$1\$2Tin-Mon)f;",
+         "%/\sTout=\s+/%(\$1\$2Tout-Mon)f;",
+         "%/\sTamb=\s+/%(\$1\$2Tamb-Mon)f;",
+         "%/\sdT=\s+/%(\$1\$2dT-Mon)f;",
+         "%/\sCurrent=\s+/%(\$1\$2Current-Mon)f;",
+         "%/\sRF=\s+/%(\$1\$2ReflectedPwr-Mon)f;";
 }
