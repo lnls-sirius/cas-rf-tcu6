@@ -1,0 +1,47 @@
+record(stringin, "$(P)$(R)Data"){
+    field(DTYP, "stream")
+    field(INP,  "@TCU6.proto getData($(P),$(R)) $(PORT) $(A)")
+    field(SCAN, "1 second")
+}
+
+record(ai, "$(P)$(R)Tin-Mon"){
+    field(DTYP, "Soft Channel")
+    field(DESC, "Water inlet temp")
+    field(PREC, "2")
+    field(EGU,  "C")
+}
+
+record(ai, "$(P)$(R)Tout-Mon"){
+    field(DTYP, "Soft Channel")
+    field(DESC, "Water outlet temp")
+    field(PREC, "2")
+    field(EGU,  "C")
+}
+
+record(ai, "$(P)$(R)Tamb-Mon"){
+    field(DTYP, "Soft Channel")
+    field(DESC, "Ambient temp")
+    field(PREC, "2")
+    field(EGU,  "C")
+}
+
+record(ai, "$(P)$(R)dT-Mon"){
+    field(DTYP, "Soft Channel")
+    field(DESC, "Water temp difference")
+    field(PREC, "2")
+    field(EGU,  "C")
+}
+
+record(ai, "$(P)$(R)Current-Mon"){
+    field(DTYP, "Soft Channel")
+    field(DESC, "coin current in a")
+    field(PREC, "2")
+    field(EGU,  "A")
+}
+
+record(ai, "$(P)$(R)ReflectedPwr-Mon"){
+    field(DTYP, "Soft Channel")
+    field(DESC, "Reflected pwr at RF sensor")
+    field(PREC, "2")
+    field(EGU,  "dBm")
+}
