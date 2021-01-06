@@ -20,11 +20,15 @@ TCU6_DBD += calcSupport.dbd
 TCU6_DBD += asyn.dbd
 TCU6_DBD += stream.dbd
 TCU6_DBD += drvAsynSerialPort.dbd
+TCU6_DBD += caPutLog.dbd
+TCU6_DBD += asSupport.dbd
 
 # Add all the support libraries needed by this IOC
 TCU6_LIBS += stream
 TCU6_LIBS += asyn
 TCU6_LIBS += calc
+TCU6_LIBS += caPutLog
+TCU6_LIBS += autosave
 
 # TCU6_registerRecordDeviceDriver.cpp derives from TCU6.dbd
 TCU6_SRCS += TCU6_registerRecordDeviceDriver.cpp
