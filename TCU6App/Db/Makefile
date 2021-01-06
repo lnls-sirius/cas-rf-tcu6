@@ -12,6 +12,7 @@ include $(TOP)/configure/CONFIG
 # databases, templates, substitutions like this
 DB += TCU6.db
 DB += TCU6.proto
+DB += Security.as
 
 #----------------------------------------------------
 # If <anyname>.db template is not named <anyname>*.template add

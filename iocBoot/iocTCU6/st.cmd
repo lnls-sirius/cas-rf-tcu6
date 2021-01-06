@@ -7,6 +7,7 @@ cd "${TOP}"
 
 dbLoadDatabase "dbd/TCU6.dbd"
 TCU6_registerRecordDeviceDriver pdbbase
+asSetFilename("${TOP}/db/Security.as")
 
 drvAsynSerialPortConfigure("L0", "/dev/ttyUSB0")
 asynSetOption("L0", 0, "baud", "115200")
