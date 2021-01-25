@@ -12,7 +12,7 @@ asSetFilename("${TOP}/db/Security.as")
 drvAsynSerialPortConfigure("L0", "/dev/ttyUSB0")
 asynSetOption("L0", 0, "baud", "115200")
 
-dbLoadRecords("db/TCU6.db","P=RA-TL:RF-Circulator-BO:,R=,PORT=L0,A=0")
+dbLoadRecords("db/TCU6.db","P=$(P),R=,PORT=L0,A=0")
 
 cd "${TOP}/iocBoot/${IOC}"
 iocInit
