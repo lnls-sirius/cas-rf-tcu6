@@ -39,7 +39,7 @@ record(ai, "$(P)$(R)Current-Mon"){
     field(EGU,  "A")
 }
 
-record(ai, "$(P)$(R)ReflectedPwr-Mon"){
+record(ai, "$(P)$(R)PwrRevIndBm-Mon"){
     field(DTYP, "Soft Channel")
     field(DESC, "Reflected pwr at RF sensor")
     field(PREC, "2")

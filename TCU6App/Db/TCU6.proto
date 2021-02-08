@@ -7,5 +7,5 @@ getData {
          "%/\sTamb=\s+/%(\$1\$2Tamb-Mon)f;",
          "%/\sdT=\s+/%(\$1\$2dT-Mon)f;",
          "%/\sCurrent=\s+/%(\$1\$2Current-Mon)f;",
-         "%/\sRF=\s+/%(\$1\$2ReflectedPwr-Mon)f;";
+         "%/\sRF=\s+/%(\$1\$2PwrRevIndBm-Mon)f;";
 }

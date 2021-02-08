@@ -2,4 +2,4 @@ version: "3.7"
 services:
   ioc:
     build: "."
-    image: "dockerregistry.lnls-sirius.com.br/gco/rf-tcu6:v1.2"
+    image: "dockerregistry.lnls-sirius.com.br/gco/rf-tcu6:v1.4"
