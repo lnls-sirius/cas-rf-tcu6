@@ -5,6 +5,8 @@
 
 cd "${TOP}"
 
+epicsEnvSet("EPICS_CAS_SERVER_PORT","$(EPICS_CAS_SERVER_PORT)")
+
 dbLoadDatabase "dbd/TCU6.dbd"
 TCU6_registerRecordDeviceDriver pdbbase
 asSetFilename("${TOP}/db/Security.as")

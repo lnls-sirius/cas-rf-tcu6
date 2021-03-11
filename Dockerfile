@@ -5,7 +5,10 @@ FROM  lnlscon/epics-r3.15.8:v1.2 AS base
 LABEL maintainer="Claudio Carneiro <claudio.carneiro@lnls.br>"
 
 # VIM
-RUN apt-get -y update && apt-get -y install procps socat vim
+RUN apt-get -y update && apt-get -y install \
+      procps\
+      socat\
+      vim
 
 # Epics auto addr list
 ENV EPICS_CA_AUTO_ADDR_LIST YES
@@ -15,6 +18,7 @@ ENV EPICS_IOC_CAPUTLOG_INET 0.0.0.0
 ENV EPICS_IOC_CAPUTLOG_PORT 7012
 ENV EPICS_IOC_LOG_INET 0.0.0.0
 ENV EPICS_IOC_LOG_PORT 7011
+ENV EPICS_CAS_SERVER_PORT 5064
 
 ENV IOC_PROCSERV_SOCK /opt/TCU6IOC/sockets/ioc.sock
 ENV PCTRL_SOCK /opt/TCU6IOC/procCtrl/sockets/pCtrl.sock
