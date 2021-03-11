@@ -27,7 +27,7 @@ RUN mkdir -p /opt/TCU6IOC/autosave
 
 WORKDIR /opt/TCU6IOC
 
-COPY . /opt/TCU6IOC
+COPY ./ioc /opt/TCU6IOC
 
 RUN cd /opt/TCU6IOC/procCtrl && envsubst < configure/RELEASE.tmplt > configure/RELEASE &&\
     cat configure/RELEASE && make distclean && make clean && make -j$(nproc) && mkdir sockets &&\
