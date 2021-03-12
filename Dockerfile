@@ -1,8 +1,7 @@
 # Author: Cláudio Ferreira Carneiro
 # LNLS - Brazilian Synchrotron Light Source Laboratory
-
-FROM  lnlscon/epics-r3.15.8:v1.2 AS base
-LABEL maintainer="Claudio Carneiro <claudio.carneiro@lnls.br>"
+ARG EPICS_BASE_IMAGE
+FROM  ${EPICS_BASE_IMAGE} AS base
 
 # VIM
 RUN apt-get -y update && apt-get -y install \

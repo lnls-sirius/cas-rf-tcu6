@@ -1,8 +1,7 @@
 version: "3.7"
 services:
   ioc:
-    build: "."
-    image: "dockerregistry.lnls-sirius.com.br/gco/rf-tcu6:v1.5"
+    image: ${TCU6_IMAGE}:${TCU6_TAG}
     network_mode: host
     environment:
       - P=RF-TCU-Tests
